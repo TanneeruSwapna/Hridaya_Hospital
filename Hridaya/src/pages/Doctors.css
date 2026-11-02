@@ -1,0 +1,297 @@
+
+
+
+/* src/components/Doctors/Doctors.css */
+.doctors-page1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.doctors-hero1 {
+  background: linear-gradient(135deg, #0d5ba8 0%, #093a6d 100%);
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 70px;
+}
+
+.doctors-hero1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1581595219316-5e6f9b27f3cb?auto=format&fit=crop&w=1200&h=300') no-repeat center center/cover;
+  opacity: 0.15;
+}
+
+.hero-content1 {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-content1 h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-content1 p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+/* Doctors Grid Container */
+.doctors-grid-container1 {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+/* Doctors Grid */
+.doctors-grid1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.doctor-card1 {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.doctor-card1:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.doctor-image-container1 {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.doctor-image1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.doctor-card1:hover .doctor-image {
+  transform: scale(1.05);
+}
+
+.specialty-badge1 {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  background: rgba(13, 91, 168, 0.9);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 0 30px 30px 0;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.doctor-info1 {
+  padding: 25px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-name1 {
+  font-size: 1.5rem;
+  color: #0d5ba8;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.doctor-description1 {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* Image Credit */
+.image-credit1 {
+  text-align: center;
+  margin: 40px 0;
+  color: #777;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* Working Process */
+.working-process1 {
+  text-align: center;
+  margin: 60px 0;
+  padding: 0 20px;
+}
+
+.working-process1 h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.working-process1 h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #0d5ba8;
+}
+
+.working-process1 p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Process Steps */
+.process-steps1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px 0 70px;
+  position: relative;
+}
+
+.step1 {
+  flex: 1;
+  min-width: 200px;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+}
+
+.step-content1 {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.step-divider1 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 80%;
+  background: #ddd;
+  transform: translateY(-50%);
+}
+
+.step-title1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.step-description1 {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Footer Note */
+.footer-note {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #504c4c;
+  color: #777;
+  font-size: 0.95rem;
+  background: linear-gradient(135deg, #0d5ba8 0%, #093a6d 100%);
+  font-style: italic;
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .doctors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .doctors-hero {
+    height: 250px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .doctors-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .doctor-image-container {
+    height: 300px;
+  }
+  
+  .working-process h2 {
+    font-size: 2rem;
+  }
+  
+  .working-process h3 {
+    font-size: 1.5rem;
+  }
+  
+  .process-steps {
+    flex-direction: column;
+  }
+  
+  .step {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+  
+  .step-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .doctor-image-container {
+    height: 220px;
+  }
+  
+  .doctor-name {
+    font-size: 1.3rem;
+  }
+}
