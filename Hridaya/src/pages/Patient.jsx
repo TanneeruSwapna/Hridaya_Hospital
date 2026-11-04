@@ -6,7 +6,7 @@ import "./Patient.css";
 import Reports from './Reports';
 
 
-const API_URL = "http://localhost:4000/api/appointments";
+const API_URL = `${import.meta.env.VITE_API_URL}/api/appointments`;
 
 function Patient() {
   const navigate = useNavigate();

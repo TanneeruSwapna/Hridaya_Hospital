@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import './Appointment.css';
 
-const API_URL = 'http://localhost:4000/api/appointments';
+const API_URL = `${import.meta.env.VITE_API_URL}/api/appointments`;
 
 const initialFormData = {
   name: '',
